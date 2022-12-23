@@ -26,7 +26,7 @@ fn main() -> Result<()> {
         let atom = RegisterClassA(&wc);
         debug_assert!(atom != 0);
 
-        let win = CreateWindowExA(WINDOW_EX_STYLE::default(), window_class, s!("This is a sample window"), WS_OVERLAPPEDWINDOW | WS_VISIBLE, CW_USEDEFAULT, CW_USEDEFAULT, 320, 240, None, None, instance, None);
+        let win = CreateWindowExA(WINDOW_EX_STYLE::default(), window_class, s!("Confidential window"), WS_OVERLAPPEDWINDOW | WS_VISIBLE, CW_USEDEFAULT, CW_USEDEFAULT, 320, 240, None, None, instance, None);
 
         SetWindowDisplayAffinity(win, WDA_MONITOR);
 
